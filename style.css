@@ -1,0 +1,88 @@
+/* Global styles */
+body {
+  font-family: 'Times New Roman', serif;
+  background-color: #2d2d2d;
+  color: #f4e1c1;
+  margin: 10px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  width: 80%;
+  max-width: 800px;
+  padding: 20px;
+  border: 1px solid #d4af37; /* Doré */
+  border-radius: 10px;
+  background-color: #3a3a3a;
+}
+
+h1 {
+  font-family: 'Nocturne Serif', serif;
+  color: #f4e1c1;
+}
+
+button {
+  background-color: #d4af37;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #c59b3f;
+}
+
+input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #d4af37;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.reward-count ul {
+  height:100px;
+  overflow:auto;
+}
+
+.lot-result {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #444;
+  border: 1px solid #d4af37;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 18px;opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.lot-result.show {
+  opacity: 1;
+}
+
+.lot-result img {width:100px;}
+
+.lot-details {
+  margin-top: 30px;
+}
+
+.lot-details ul, .wonLots {
+  list-style-type: none;
+  padding: 0;
+}
+
+.lot-details li, .wonLots li {
+  background-color: #333;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 5px;
+  color: #f4e1c1;
+}
