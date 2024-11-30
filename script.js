@@ -1,8 +1,13 @@
 // Liste des lots avec leurs probabilités, limites et compteurs actuels
 const lots = [
-    { name: "Potion de soin", probability: 0.5, max_count: 50, current_count: 0, image: "potion.png" },
-    { name: "Monnaie d'or", probability: 0.3, max_count: 70, current_count: 0, image: "gold_coin.png" },
-    { name: "Équipement épique", probability: 0.2, max_count: 20, current_count: 0, image: "epic_gear.png" }
+    { name: "50 écus", probability: 0.5, max_count: 50, current_count: 0, image: "https://i.imgur.com/l7G6rBX.png" },
+    { name: "5 PR", probability: 0.2, max_count: 20, current_count: 0, image: "https://i.imgur.com/Z1pB01E.png" },
+    { name: "Fragment d'XP", probability: 0.12, max_count: 12, current_count: 0, image: "https://i.imgur.com/CJsqMRy.png" },
+    { name: "Fragment de matériau", probability: 0.05, max_count: 5, current_count: 0, image: "https://i.imgur.com/hluq1T3.png" },
+    { name: "Familier", probability: 0.05, max_count: 1, current_count: 0, image: "https://i.imgur.com/lVzkm3a.png" },
+    { name: "Clé spéciale", probability: 0.01, max_count: 1, current_count: 0, image: "https://i.imgur.com/JbR1ggf.png" },
+    { name: "Lanterne des trésors", probability: 0.01, max_count: 1, current_count: 0, image: "https://i.imgur.com/XMmxAgB.png" },
+    { name: "Plume de voyage", probability: 0.01, max_count: 1, current_count: 0, image: "https://i.imgur.com/qTW8Uxi.png" }
   ];
   
   // Fonction pour démarrer le tirage
@@ -81,11 +86,15 @@ const lots = [
   
     // Ajoute une animation spécifique en fonction de la rareté du lot
     if (lot.probability === 0.5) {
-      resultDiv.style.backgroundColor = "#72a92f"; // Vert pour les lots fréquents
-    } else if (lot.probability === 0.3) {
-      resultDiv.style.backgroundColor = "#d4af37"; // Doré pour les lots rares
+      resultDiv.style.backgroundColor = "#969696"; // Gris pour les lots N
+    } else if (lot.probability === 0.2) {
+      resultDiv.style.backgroundColor = "#339966"; // Vert pour les lots R
+    } else if (lot.probability === 0.12) {
+      resultDiv.style.backgroundColor = "#339966";
+    } else if (lot.probability === 0.05) {
+      resultDiv.style.backgroundColor = "#D4AF37"; // Doré pour les lots SR
     } else {
-      resultDiv.style.backgroundColor = "#8a2be2"; // Violet pour les lots épiques
+      resultDiv.style.backgroundColor = "#382B88"; // Violet pour les lots SSR
     }
   }
   
